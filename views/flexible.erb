@@ -1,0 +1,10 @@
+<%= params.fetch("number_of_dice") %>
+<h1><%= @num_dice %>d6</h1>
+
+<ul>
+  <% @rolls.each do |a_roll| %>
+    <li>
+      <%= a_roll %>
+    </li>
+  <% end %>
+</ul>
